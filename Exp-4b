@@ -1,0 +1,14 @@
+//Experiment 4 a: - Create a child process using the fork system call.
+//Obtain the process ID of both child and parent by using getpid and getppid system call.)
+#include <stdio.h>
+#include <sys/types.h>
+#include <unistd.h>
+int main()
+{
+//fork() make two processes that run the same program.
+fork();
+printf("Hello world!\n");
+printf("Parent Process id=%d", getppid());
+printf("Child Process id=%d", getpid());
+return 0;
+}
