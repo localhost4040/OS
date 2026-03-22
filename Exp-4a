@@ -1,0 +1,19 @@
+# Experiment 4b – System calls for file management in python
+f=open("try.txt", "r");
+print(f.read());
+
+f=open("try.txt", "a");
+f.write("Now the file has more content");
+f.close()
+
+#open and read file after appending
+f=open("try.txt", "r");
+print(f.read());
+
+f=open("try.txt", "w");
+f.write("Woops! I have deleted the content!");
+f.close()
+
+#open and read file after overwriting
+f=open("try.txt", "r");
+print(f.read());
